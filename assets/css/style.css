@@ -8,6 +8,7 @@
     --button-gray-color: #454545;
     --white-color: #ffffff;
     --gray-bg-color-area4: #e8e9ee;
+    --gray-bg-color-footer: #333333;
 }
 
 body {
@@ -265,4 +266,34 @@ h2 {
     background-image: url('../images/bg3.jpg');
     background-position: left;
     background-repeat: no-repeat;
+}
+
+/* CSS area 5 */
+
+.area5 {
+    background-image: url('../images/bg4.jpg');
+    background-size: cover;
+    background-position: center 90%;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+footer {
+    background-color: var(--gray-bg-color-footer);
+    color: var(--white-color);
+    padding: 80px;
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: var(--green-color);
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer p a:visited {
+    color: var(--green-color);
 }
