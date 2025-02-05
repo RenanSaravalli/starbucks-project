@@ -3,7 +3,10 @@
 
 :root {
     --green-color: #117050;
+    --green-bar-color: #006341;
     --light-gray-color: #999999;
+    --button-gray-color: #454545;
+    --white-color: #ffffff;
 }
 
 body {
@@ -22,6 +25,47 @@ header .line {
     max-width: 1140px;
     margin: auto;
 }
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 100px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 45px;
+    margin: 20px 0px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: 2px solid var(--button-gray-color);
+    color: var(--button-gray-color);
+    text-decoration: none;
+    transition: all 0.3 ease;
+}
+
+.button:hover {
+    color: var(--white-color);
+    background-color: var(--button-gray-color);
+}
+
+/* CSS bar */
+
+.bar {
+    background-color: var(--green-bar-color);
+    width: 168px;
+    height: 22px;
+}
+
+/* CSS Header area */
 
 .header--area {
     display: flex;
@@ -79,20 +123,14 @@ header .line {
     height: 24px;
 }
 
+/* CSS banner area */
+
 .banner {
     background-image: url('../images/bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 90px 0px;
-}
-
-.banner h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    font-size: 96px;
-    line-height: 100px;
-    margin-bottom: 30px;
 }
 
 .banner--images {
@@ -105,4 +143,39 @@ header .line {
     border: 6px solid var(--green-color);
     border-radius: 50%;
     margin-right: 40px;
+}
+
+/* CSS principal content */
+.area1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.area1--content {
+    padding: 80px;
+}
+
+.area1--quote {
+    margin-bottom: 30px;
+}
+
+.area1--text {
+    max-width: 58%;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area1--img1 {
+    background-image: url('../images/f2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.area1--img2 {
+    background-image: url('../images/f1.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
 }
