@@ -7,6 +7,7 @@
     --light-gray-color: #999999;
     --button-gray-color: #454545;
     --white-color: #ffffff;
+    --gray-bg-color-area4: #e8e9ee;
 }
 
 body {
@@ -175,6 +176,7 @@ h2 {
     background-image: url('../images/f1.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
 }
@@ -201,6 +203,7 @@ h2 {
     background-image: url('../images/f4.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 650px;
 }
 
@@ -208,6 +211,7 @@ h2 {
     background-image: url('../images/f3.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
@@ -224,6 +228,7 @@ h2 {
     background-image: url('../images/bg2.jpg');
     background-size: cover;
     background-position: left;
+    background-repeat: no-repeat;
 }
 
 
@@ -236,4 +241,28 @@ h2 {
     background-image: url('../images/f5.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CSS Fourth content */
+
+.area4 {
+    display: grid;
+    grid-template-columns: 470px 1fr;
+    background-color: var(--gray-bg-color-area4);
+}
+
+.area4--content {
+    padding: 200px 80px;
+}
+
+.area4--text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area4--img1 {
+    background-image: url('../images/bg3.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
 }
