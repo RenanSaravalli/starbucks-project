@@ -145,7 +145,7 @@ h2 {
     margin-right: 40px;
 }
 
-/* CSS principal content */
+/* CSS Principal content */
 .area1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -177,5 +177,38 @@ h2 {
     background-size: cover;
     background-position: center;
     grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+/* CSS Second content */
+.area2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.area2--content {
+    padding: 80px;
+    max-width: 65%;
+}
+
+
+.area2--text {
+    max-width: 58%;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area2--img1 {
+    background-image: url('../images/f4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+}
+
+.area2--img2 {
+    background-image: url('../images/f3.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
