@@ -324,15 +324,54 @@ footer p a:visited {
         padding: 0px 20px;
     }
 
-    .area1 {
-        grid-template-columns: 3fr 2fr;
+    .header--search input {
+        max-width: 110px;
     }
 
-    .area2 {
-        grid-template-columns: 2fr 3fr;
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
     }
 
-    .area3 {
-        grid-template-columns: 3fr 2fr;
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
     }
+
+    .header--menu {
+        margin-left: 20px;
+    }
+
+    .banner--images img {
+        width: 70px;
+        height: 70px;
+        border: 3px solid var(--green-color);
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr;
+    }
+
+    .area1--content,
+    .area2--content,
+    .area3--content,
+    .area4--content {
+        padding: 40px;
+    }
+
+    .area5 {
+        height: 200px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 40px 20px;
+    }
+
 }
